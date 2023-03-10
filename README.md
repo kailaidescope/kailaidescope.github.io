@@ -1,6 +1,6 @@
 # My GitHub-hosted Website
-# kailaidescope.github.io
-## by Kai Turanski
+## kailaidescope.github.io
+by Kai Turanski
 
 ## Features of the website
 
