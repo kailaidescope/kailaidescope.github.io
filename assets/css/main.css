@@ -4,98 +4,67 @@
 	--darker: #070807;
 	--pink: #EC4899;
 	--purple: #885CF6;
-	--lightgreen: #75e078;
-	--lightgreenApink: #75e0a7;
-	--darkgreen: #29943B;
+	--yellow: #edc447;
+	--olive: #423E37;
 }
 
 * {
 	box-sizing: border-box;
-	margin: 0;
-	font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+	font-family: 'Spectral', 'Georgia', serif;
 }
 
-h1,h3 {
-	text-align: center;
+h1 {
+	max-width: 800 px;
+	width: 100%;
+	margin: 4% 0%;
+
+	color: var(--yellow);
 }
 
-#encryption-tip {
-	color: var(--pink);
-	text-align: center;
+h2, h3, h4 {
+	margin: 2% 0%;
+	max-width: 800 px;
+
+	color: var(--purple);
 }
 
-h2 {
-	color: var(--pink);
-	text-align: center;
+p {
+	color: var(--olive);
+}
+
+a {
+	color: var(--purple);
+}
+
+div {
+	border-style: solid;
+	border-color: var(--pink);
+	border-radius: 50px;
+	border-width: 5px;
+	background: var(--yellow);
+	padding: 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	max-width: 400px;
+	float: center;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
+	margin: 5% 20%;
 	min-height: 100vh;
-	background: var(--purple);
-	color: var(--lightgreen);
+	background-image: linear-gradient(to top, var(--pink), var(--purple));
 }
 
-header {
-	padding: 2rem 3rem;
-	max-width: 800 px;
-	width: 100%;
-	margin: 0 auto;
+main {
+	margin: 5% 0%;
 }
 
-div {
-	border-style: outset;
-	border-color: var(--pink);
-	border-radius: 25px;
-	border-width: 5px;
-	background: var(--lightgreenApink);
-	padding: 0.5rem 0.5rem;
-	margin: 0.5rem auto;
-	max-width: 800px;
-	float: center;
+#pink {
+	color: var(--pink);
 }
 
-.innerDivs {
-	background: var(--pink);
-	border-color: var(--lightgreen);
-	border-width: 5px;
-	border-style: outset;
-	padding: 1rem 2rem;
-	border-radius: 25px;
-	margin: auto
-	max-width: 300px;
-	color: var(--lightgreenApink);
+#yellow {
+	color: var(--yellow);
 }
-
-label {
-	display: block;
-	color: var(--light);
-}
-
-.submitButton {
-	border-style: none;
-	border-width: 0px;
-	border-radius: 0px;
-	background: transparent;
-	max-width: 10rem;
-	padding: 0rem 0rem;
-	margin: auto
-}
-
-input {
-	background: var(--purple);
-	color: var(--light);
-	text-decoration-color: var(--light);
-	border-color: var(--lightgreen);
-	border-width: 3px;
-	border-style: solid;
-	padding: 0rem 0.5rem;
-	width: 100%;
-	margin: 0.2rem 0.2rem;
-}
-
-::placeholder {
-	opacity: 1;
-	color: var(--lightgreen);
-};

@@ -2,74 +2,28 @@
 <html lang="en">
 
 <head>
-	<title>Grid Cipher</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-	<link rel="stylesheet" href="./assets/css/main.css"/>
+    <link rel="stylesheet" href="./assets/css/main.css"/>
 </head>
-
 <body>
-	<header>
-		<h1>A Grid Cipher</h1>
-		<h3>by Kai Turanski</h3>
-		<div id="encryption-space">
-			<h2>Encryption</h2>
-			<h4 id="encryption-tip">(Use a key that is smaller than the number of characters encrypted)</h4>
-			<form id="encryption-input-form" class="innerDivs">
-				<label id="new-encryption-input-label"><h4>Text to encrypt</h4></label>
-				<input type="text" 
-					id="new-encryption-input" 
-					placeholder="What do you want to encrypt?"/>
-				<label id="new-encryption-key-label"><h4>Encryption key</h4></label>
-				<input type="number"
-					min=0
-					id="new-encryption-key"
-					placeholder="5">
-				<div class="submitButton">
-					<input type="submit"
-						id="new-encryption-submit"
-						value="Encrypt!"/>
-				</div>
-			</form>	
 
-			<div id="encrypt-output-form" class="innerDivs">
-				<label id="new-encryption-output-label"><h4>Encryption output:</h4></label>
-				<input type="text" 
-					id="new-encryption-output" 
-					class="text" 
-					value="Waiting for encryption input..."
-					readonly>
-			</div>
-		</div>
-		<div id="decryption-space">
-			<h2>Decryption</h2>
-			<form id="decryption-input-form" class="innerDivs">
-				<label id="new-decryption-input-label"><h4>Text to decrypt</h4></label>
-				<input type="text" 
-					id="new-decryption-input" 
-					placeholder="What do you want to decrypt?"/>
-				<label id="new-decryption-key-label"><h4>Decryption key</h4></label>
-				<input type="number"
-					min=0
-					id="new-decryption-key"
-					placeholder="5">
-				<div class="submitButton">
-					<input type="submit"
-					id="new-decryption-submit"
-					value="Decrypt!"/>
-				</div>
-			</form>
+    <header>
+        <h1>Kai's Website</h1>
+        <h3 id="yellow">About me:</h3>
+        <p id="yellow">Hi! I’m @kailaidescope, otherwise known as Kai. I’m interested in computer science, software engineering, video game design & development, and archaeology. I’m currently learning to program game AI in Unity. I’m looking to collaborate on video game projects, or archaeological software tools. You can reach me at <a id="pink" href="kai@turanski.com">kai@turanski.com</a><p>
+    </header>
 
-			<div id="decrypt-output-form" class="innerDivs">
-				<label id="new-decryption-output-label"><h4>Decryption output:</h4></label>
-				<input type="text" 
-					id="new-decryption-output" 
-					class="text" 
-					value="Waiting for decryption input..."
-					readonly>
-			</div>
-		</div>
-	</header>
-	<script src="./assets/js/main.js"></script>
+    <main>
+        <div>
+            <h2>Grid Cipher</h2>
+            <p>Web-hosted cipher project inspired by COMP 273 at McGill University</p>
+            <a href="./grid-cipher/index.html">Try it out!</a>
+        </div>
+    </main>
+
 </body>
 
 </html>
