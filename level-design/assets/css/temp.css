@@ -1,0 +1,67 @@
+:root {
+	--light: #EEE;
+	--dark: #252625;
+	--darker: #070807;
+	--pink: #763254;
+	--purple: #443862;
+	--darkpurple: #262333;
+	--yellow: #E7D498;
+	--light2: #E9C0CE;
+	--olive: #423E37;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-image: linear-gradient(to top, var(--darker), var(--darker));
+}
+
+.container {
+	margin: 0 0;
+	padding: 20px;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color: var(--pink);
+	font-weight: 900;
+	font-size: 100px;
+}
+.project {
+	border-style: solid;
+	border-color: var(--dark);
+	border-radius: 50px;
+	border-width: 2px;
+	background-image: linear-gradient(to top, var(--darkpurple), var(--purple));
+	padding: 5%;
+	margin: 50px 50px;
+	float: center;
+}
+.project h2 {
+	text-align: center;
+	color: var(--yellow);
+	font-size: 40px;
+	font-weight: 800;
+	margin-bottom: 50px;
+}
+.project .media {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.media-item {
+	margin-bottom: 20px;
+}
+.media-item img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+
+.media-item iframe {
+	width: 100%;
+	height: 500px;
+	border-radius: 25px;
+}
