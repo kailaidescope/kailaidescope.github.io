@@ -15,10 +15,24 @@
 	font-family: 'Spectral', 'Georgia', serif;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 5% 20%;
+	min-height: 100vh;
+	background-image: linear-gradient(to top, var(--pink), var(--purple));
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+}
+
 .header h1 {
 	max-width: 800 px;
 	width: 100%;
-	margin: 4% 0%;
+	margin: 2% 0%;
 
 	color: var(--yellow);
 }
@@ -32,14 +46,6 @@
 
 .header p {
 	color: var(--yellow);
-}
-
-body {
-	display: flex;
-	flex-direction: column;
-	margin: 5% 20%;
-	min-height: 100vh;
-	background-image: linear-gradient(to top, var(--pink), var(--purple));
 }
 
 .project-pane {
