@@ -5,7 +5,7 @@
 	--pink: #763254;
 	--purple: #443862;
 	--darkpurple: #262333;
-	--yellow: #E7D498;
+	--yellow: #C685A1;
 	--light2: #E9C0CE;
 	--olive: #423E37;
 }
@@ -34,16 +34,24 @@ h1 {
 	border-radius: 50px;
 	border-width: 2px;
 	background-image: linear-gradient(to top, var(--darkpurple), var(--purple));
-	padding: 5%;
+	padding: 1% 5%;
 	margin: 50px 50px;
 	float: center;
 }
 .project h2 {
 	text-align: center;
 	color: var(--yellow);
-	font-size: 40px;
+	font-size: 50px;
 	font-weight: 800;
-	margin-bottom: 50px;
+	margin: 4% 0% 0% 0%;
+}
+.project p {
+	text-align: center;
+	color: var(--yellow);
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0% 0% 4% 0%;
 }
 .project .media {
 	display: flex;
