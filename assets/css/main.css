@@ -5,6 +5,7 @@
 	--pink: #EC4899;
 	--purple: #885CF6;
 	--yellow: #edc447;
+	--darkyellow: #E1BB4A;
 	--light2: #E9C0CE;
 	--olive: #423E37;
 }
@@ -14,7 +15,7 @@
 	font-family: 'Spectral', 'Georgia', serif;
 }
 
-h1 {
+.header h1 {
 	max-width: 800 px;
 	width: 100%;
 	margin: 4% 0%;
@@ -22,32 +23,15 @@ h1 {
 	color: var(--yellow);
 }
 
-h2, h3, h4 {
+.header h3 {
 	margin: 2% 0%;
 	max-width: 800 px;
 
-	color: var(--purple);
+	color: var(--yellow);
 }
 
-p {
-	color: var(--olive);
-}
-
-a {
-	color: var(--purple);
-}
-
-div {
-	border-style: solid;
-	border-color: var(--pink);
-	border-radius: 50px;
-	border-width: 5px;
-	background: var(--yellow);
-	padding: 5%;
-	margin-left: 0%;
-	margin-right: 0%;
-	max-width: 400px;
-	float: center;
+.header p {
+	color: var(--yellow);
 }
 
 body {
@@ -58,14 +42,43 @@ body {
 	background-image: linear-gradient(to top, var(--pink), var(--purple));
 }
 
-main {
-	margin: 5% 0%;
+.project-pane {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 5%;
+}
+
+.project-pane h2 {
+	margin: 2% 0%;
+	max-width: 800 px;
+
+	color: var(--purple);
+	/*text-shadow: 0.5px 1px 1px var(--olive);*/
+}
+
+.project-pane p {
+	color: var(--olive);
+}
+
+.project-pane a {
+	color: var(--purple);
+}
+
+.project {
+	margin: 5% 5%;
+	border-style: outset;
+	border-color: var(--pink);
+	border-radius: 50px;
+	border-width: 2px;
+	background-image: linear-gradient(to top, var(--darkyellow), var(--yellow));
+	padding: 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	max-width: 400px;
+	float: center;
 }
 
 #pink {
 	color: var(--light2);
-}
-
-#yellow {
-	color: var(--yellow);
 }

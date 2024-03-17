@@ -33,7 +33,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	background: var(--purple);
+	/*background: var(--purple);*/
+	background-image: url("../images/graphic_design_is_my_passion.png");
+	background-size: 25%;
 	color: var(--lightgreen);
 }
 
@@ -63,7 +65,7 @@ div {
 	border-style: outset;
 	padding: 1rem 2rem;
 	border-radius: 25px;
-	margin: auto
+	margin: auto;
 	max-width: 300px;
 	color: var(--lightgreenApink);
 }
