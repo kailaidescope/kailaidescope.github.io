@@ -2,71 +2,74 @@
 	--light: #EEE;
 	--dark: #252625;
 	--darker: #070807;
-	--pink: #EC4899;
-	--purple: #885CF6;
-	--yellow: #edc447;
+	--pink: #763254;
+	--purple: #443862;
+	--darkpurple: #262333;
+	--yellow: #C685A1;
 	--light2: #E9C0CE;
 	--olive: #423E37;
-}
-
-* {
-	box-sizing: border-box;
-	font-family: 'Spectral', 'Georgia', serif;
-}
-
-h1 {
-	max-width: 800 px;
-	width: 100%;
-	margin: 4% 0%;
-
-	color: var(--yellow);
-}
-
-h2, h3, h4 {
-	margin: 2% 0%;
-	max-width: 800 px;
-
-	color: var(--purple);
-}
-
-p {
-	color: var(--olive);
-}
-
-a {
-	color: var(--purple);
-}
-
-div {
-	border-style: solid;
-	border-color: var(--pink);
-	border-radius: 50px;
-	border-width: 5px;
-	background: var(--yellow);
-	padding: 5%;
-	margin-left: 0%;
-	margin-right: 0%;
-	max-width: 400px;
-	float: center;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
-	padding: 5% 25%;
+	gap: 25px;
+	padding: 0% 5%;
 	min-height: 100vh;
-	background-image: linear-gradient(to top, var(--pink), var(--purple));
+	/*background-image: linear-gradient(to top, var(--darker), var(--darker));*/
+	background-image: url("../images/stars_background.jpg");
+	background-size: 25%;
 }
 
-main {
-	margin: 5% 0%;
+h1 {
+	text-align: center;
+	font-style: italic;
+	color: var(--pink);
+	font-weight: 900;
+	font-size: 8vw;
 }
-
-#pink {
-	color: var(--light2);
+.project {
+	border-style: solid;
+	border-color: var(--dark);
+	border-radius: 50px;
+	border-width: 2px;
+	background-image: linear-gradient(to top, var(--darkpurple), var(--purple));
+	padding: 1% 5%;
+	margin: 0px 5% 15vw 5%;
+	float: center;
 }
-
-#yellow {
+.project h2 {
+	text-align: center;
 	color: var(--yellow);
+	font-size: 4vw;
+	font-weight: 800;
+	margin: 4% 0% 0% 0%;
+}
+.project p {
+	text-align: center;
+	color: var(--yellow);
+	font-size: 2.5vw;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0% 0% 4% 0%;
+}
+.project .media {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.media-item {
+	margin-bottom: 20px;
+}
+.media-item img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+
+.media-item iframe {
+	width: 100%;
+	height: 500px;
+	border-radius: 25px;
 }
