@@ -1,3 +1,0 @@
-Hi!! This is a little cipher project that I made a while ago for a university course which I've now improved upon, rewritten in javascript, and implemented into a website for anyone to use! It's not the most practical cipher, since the code is open source and easily accessible through the website–anyone with knowledge in programming could decode its function–but I hope that it can be fun for anyone who would like an easy-to-use and simple cipher. I may write a description of how the cipher functions to attach to the website soon, for anyone interested.
-
-~Kailaidescope
