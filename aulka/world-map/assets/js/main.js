@@ -10,32 +10,44 @@ info_title.textContent = "Hover on region to learn more!";
 // as it will load the svg doc asynchronously
 map_html.addEventListener("load", () => {
 
-	//alert("SVG Loaded");
-	console.log(map_html.contentDocument);
 	map_svg = map_html.contentDocument;
 
 	muonir_path = map_svg.getElementById("Muonir");
 
 	const regions = map_svg.getElementsByClassName("region");
 	let regions_fill = [];
+	let current_region;
 
+	// Make all regions hoverable and display associated text
 	for (let i = 0; i < regions.length; i++) {
 
 		regions_fill.push(regions[i].style.fill);
 
-		regions[i].addEventListener("mouseenter", () => {
-			regions[i].style.fill = "#abb823";
-			info_title.textContent = regions[i].getAttribute("inkscape:label");
-			info_description.textContent = "Dungeons & Dragons (commonly abbreviated as D&D or DnD)[2] is a fantasy tabletop role-playing game (RPG) originally created and designed by Gary Gygax and Dave Arneson.[3][4][5] The game was first published in 1974 by Tactical Studies Rules, Inc. (TSR).[5] It has been published by Wizards of the Coast, later a subsidiary of Hasbro, since 1997.";
-		}, false);
+		regions[i].addEventListener("click", () => {
+			if (current_region != null && current_region == i)
+			{   // Deselect region if selected
+				regions[i].style.fill = regions_fill[i]; 
+				info_title.textContent = "Click on region to learn more!";
+				info_description.textContent = "";
+				current_region = null;
+			} else
+			{	// Select region if not selected
+				// Reset currently selected region
+				if (current_region != null)
+				{
+					regions[current_region].style.fill = regions_fill[current_region]; 
+					info_title.textContent = "Click on region to learn more!";
+					info_description.textContent = "";
+				}
 
-		regions[i].addEventListener("mouseleave", () => {
-			regions[i].style.fill = regions_fill[i]; 
-			info_title.textContent = "Hover on region to learn more!";
-			info_description.textContent = "";
+				regions[i].style.fill = "#abb823";
+				info_title.textContent = regions[i].getAttribute("inkscape:label");
+				if(regions[i].getElementsByTagName("desc")[0] != null){
+					info_description.textContent = regions[i].getElementsByTagName("desc")[0].textContent;
+				}
+				current_region = i;
+			}
 		}, false);
 	}
-
-	console.log(regions_fill);
 	
 }, false);
