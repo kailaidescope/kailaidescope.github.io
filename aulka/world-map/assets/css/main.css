@@ -56,16 +56,19 @@ h1 {
 }
 .project .media {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .media-item {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	margin-bottom: 5%;
 }
 
 .media-item #map-svg {
 	border-radius: 2vw;
-	border: 5px double var(--dark);
+	border: 15px inset var(--darker);
 	background-color: var(--darkpurple);
 }
 
