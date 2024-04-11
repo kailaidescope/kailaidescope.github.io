@@ -5,9 +5,10 @@
 	--pink: #763254;
 	--purple: #443862;
 	--darkpurple: #262333;
-	--yellow: #C685A1;
+	--pink2: #C685A1;
+	--pink3: #825C7D;
 	--light2: #E9C0CE;
-	--olive: #423E37;
+	--olive: #3f3c48;
 }
 
 body {
@@ -40,14 +41,14 @@ h1 {
 }
 .project h2 {
 	text-align: center;
-	color: var(--yellow);
+	color: var(--pink2);
 	font-size: 4vw;
 	font-weight: 800;
 	margin: 4% 0% 0% 0%;
 }
 .project p {
 	text-align: center;
-	color: var(--yellow);
+	color: var(--pink2);
 	font-size: 2.5vw;
 	font-style: italic;
 	font-weight: 400;
@@ -59,27 +60,33 @@ h1 {
 	flex-wrap: wrap;
 }
 .media-item {
-	margin-bottom: 20px;
-}
-.media-item img {
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
-	border-radius: 25px;
+	margin-bottom: 5%;
 }
 
-.media-item iframe {
-	width: 100%;
-	height: 500px;
-	border-radius: 25px;
+.media-item #map-svg {
+	border-radius: 2vw;
+	border: 5px double var(--dark);
+	background-color: var(--darkpurple);
+}
+
+#info-box {
+	margin: auto;
+	min-height: 19vw;
 }
 
 #info-box #info-title {
 	min-width: 100%;
-	min-height: 50px;
 }
 
 #info-box #info-description {
-	min-width: 100%;
-	min-height: 30vh;
+	text-align: justify;
+	font-size: 1.5vw;
+	font-style: normal;
+	color: var(--light2);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border: 8px double var(--purple) ;
+	background-color: var(--pink3);
+	min-height: 7vw;
+	padding: 2%;
+	margin: 2%;
 }

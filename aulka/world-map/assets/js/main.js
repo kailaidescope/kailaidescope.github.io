@@ -4,7 +4,9 @@ let info_description = document.getElementById("info-description");
 let map_svg;
 let muonir_path;
 
-info_title.textContent = "Hover on region to learn more!";
+let default_title_text = "Click on region to learn more!";
+
+info_title.textContent = default_title_text;
 
 // It's important to add an load event listener to the object,
 // as it will load the svg doc asynchronously
@@ -27,8 +29,9 @@ map_html.addEventListener("load", () => {
 			if (current_region != null && current_region == i)
 			{   // Deselect region if selected
 				regions[i].style.fill = regions_fill[i]; 
-				info_title.textContent = "Click on region to learn more!";
+				info_title.textContent = default_title_text;
 				info_description.textContent = "";
+				//info_description.hidden = true;
 				current_region = null;
 			} else
 			{	// Select region if not selected
@@ -36,7 +39,7 @@ map_html.addEventListener("load", () => {
 				if (current_region != null)
 				{
 					regions[current_region].style.fill = regions_fill[current_region]; 
-					info_title.textContent = "Click on region to learn more!";
+					info_title.textContent = default_title_text;
 					info_description.textContent = "";
 				}
 
@@ -45,6 +48,7 @@ map_html.addEventListener("load", () => {
 				if(regions[i].getElementsByTagName("desc")[0] != null){
 					info_description.textContent = regions[i].getElementsByTagName("desc")[0].textContent;
 				}
+				//info_description.hidden = false;
 				current_region = i;
 			}
 		}, false);
