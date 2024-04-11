@@ -73,3 +73,13 @@ h1 {
 	height: 500px;
 	border-radius: 25px;
 }
+
+#info-box #info-title {
+	min-width: 100%;
+	min-height: 50px;
+}
+
+#info-box #info-description {
+	min-width: 100%;
+	min-height: 30vh;
+}
