@@ -4,7 +4,7 @@ let info_description = document.getElementById("info-description");
 let map_svg;
 let muonir_path;
 
-let default_title_text = "Click on region to learn more!";
+let default_title_text = "Click on a region to learn more!";
 
 info_title.textContent = default_title_text;
 
