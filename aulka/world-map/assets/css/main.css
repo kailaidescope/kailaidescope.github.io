@@ -1,0 +1,95 @@
+:root {
+	--light: #EEE;
+	--dark: #252625;
+	--darker: #070807;
+	--pink: #763254;
+	--purple: #443862;
+	--darkpurple: #262333;
+	--pink2: #C685A1;
+	--pink3: #825C7D;
+	--light2: #E9C0CE;
+	--olive: #3f3c48;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 0% 5%;
+	min-height: 100vh;
+	/*background-image: linear-gradient(to top, var(--darker), var(--darker));*/
+	background-image: url("../images/stars_background.jpg");
+	background-size: 25%;
+}
+
+h1 {
+	text-align: center;
+	font-style: italic;
+	color: var(--pink);
+	font-weight: 900;
+	font-size: 8vw;
+}
+.project {
+	border-style: solid;
+	border-color: var(--dark);
+	border-radius: 50px;
+	border-width: 2px;
+	background-image: linear-gradient(to top, var(--darkpurple), var(--purple));
+	padding: 1% 4%;
+	margin: 0px 5% 15vw 5%;
+	float: center;
+}
+.project h2 {
+	text-align: center;
+	color: var(--pink2);
+	font-size: 4vw;
+	font-weight: 800;
+	margin: 4% 0% 0% 0%;
+}
+.project p {
+	text-align: center;
+	color: var(--pink2);
+	font-size: 2.5vw;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0% 0% 4% 0%;
+}
+.project .media {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.media-item {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 5%;
+}
+
+.media-item #map-svg {
+	border-radius: 2vw;
+	border: 15px inset var(--darker);
+	background-color: var(--darkpurple);
+}
+
+#info-box {
+	margin: auto;
+	min-height: 19vw;
+}
+
+#info-box #info-title {
+	min-width: 100%;
+}
+
+#info-box #info-description {
+	text-align: justify;
+	font-size: 1.5vw;
+	font-style: normal;
+	color: var(--light2);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border: 8px double var(--purple) ;
+	background-color: var(--pink3);
+	min-height: 7vw;
+	padding: 2%;
+	margin: 2%;
+}
