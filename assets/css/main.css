@@ -75,7 +75,7 @@ body {
 	margin: 5% 5%;
 	border-style: outset;
 	border-color: var(--pink);
-	border-radius: 50px;
+	border-radius: 3vw;
 	border-width: 2px;
 	background-image: linear-gradient(to top, var(--darkyellow), var(--yellow));
 	padding: 5%;
