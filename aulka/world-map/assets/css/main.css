@@ -32,7 +32,7 @@ h1 {
 .project {
 	border-style: solid;
 	border-color: var(--dark);
-	border-radius: 50px;
+	border-radius: 5vw;
 	border-width: 2px;
 	background-image: linear-gradient(to top, var(--darkpurple), var(--purple));
 	padding: 1% 4%;
@@ -68,7 +68,7 @@ h1 {
 
 .media-item #map-svg {
 	border-radius: 2vw;
-	border: 15px inset var(--darker);
+	border: 0.5vw inset var(--darker);
 	background-color: var(--darkpurple);
 }
 
