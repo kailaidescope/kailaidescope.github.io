@@ -1,74 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-
-    <link rel="stylesheet" href="./assets/css/main.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="background"></div>
-    <div class="panel">
-        <div class="header">
-            <object class="signature" data="assets/images/KT.svg" type="image/svg+xml" width="200" height="200"></object>
-            <h1>Kai Turanski</h1>
-            <h3>About me:</h3>
-            <p>Hi! I’m @kailaidescope, otherwise known as Kai. I’m interested in computer science, software development, video game development, anthropology, and music. I’m currently learning to use fine-tuned LLM models. I’m always happy to collaborate on art or software projects. You can reach me at <a id="pink" href="kai@turanski.com">kai@turanski.com</a><p>
-        </div>
-        
-        <div class="divider"></div>
+  <header>
+    <h1>Kai's Music Portfolio</h1>
+    <p>Explore my collection of production projects.</p>
+  </header>
 
-        <div class="super-projects">
-            <h2>My Projects:</h2>
-            <div class="project-pane">
-                <div class="project">
-                    <h2>LingLab</h2>
-                    <p>A website designed to host constructed languages (conlangs). WIP.</p>
-                    <a href="./projects/linglab/index.html">Take a look!</a>
-                </div>
-                <div class="project">
-                    <h2>Splendor Online</h2>
-                    <p>Peer2Peer edition of the card game Splendor.</p>
-                    <a href="./projects/splendor/index.html">See it yourself!</a>
-                </div>
-                <div class="project">
-                    <h2>Level Design Portfolio</h2>
-                    <p>My custom maps for Valve games Team Fortress 2 and Counter-Strike 2.</p>
-                    <a href="./level-design/index.html">Check it out!</a>
-                </div>
-                <div class="project">
-                    <h2>Grid Cipher</h2>
-                    <p>Web-hosted cipher project inspired by COMP 273 at McGill University.</p>
-                    <p style="font-style: italic;">Content warning: intentionally bad graphic design.</p>
-                    <a href="./grid-cipher/index.html">Try it out!</a>
-                </div>
-            </div>
-        </div> 
-        <div class="divider"></div>
-        <div class="super-projects">
-            <h2>My Art:</h2>
-            <div class="project-pane">
-                <div class="project">
-                    <h2>Photography</h2>
-                    <p>My photography portfolio, featuring film photos taken around North America.</p>
-                    <a href="./art/photography/index.html">Take a gander!</a>
-                </div>
-                <div class="project">
-                    <h2>Music</h2>
-                    <p>My music projects, produced primarily using Ableton Live.</p>
-                    <a href="./art/music/index.html">Give a listen!</a>
-                </div>
-                <div class="project">
-                    <h2>D&D World</h2>
-                    <p>My own Dungeons & Dragons homebrew world, made accessible through interactive maps and lore documents.</p>
-                    <a href="./aulka/index.html">Give it a whirl!</a>
-                </div>
-            </div>
-        </div>
-        <div class="divider"></div>
-    </div>
+  <main>
+    <section class="music-list">
+      <article class="music-item">
+        <h2>Track 1: Gas</h2>
+        <audio controls>
+          <source src="assets/music/Gas 4.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+      <article class="music-item">
+        <h2>Track 2: Could Have</h2>
+        <audio controls>
+          <source src="assets/music/Could have 6.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+      <article class="music-item">
+        <h2>Track 3: Sweet Rain</h2>
+        <audio controls>
+          <source src="assets/music/Sweet Rain 1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Kai Dupret Turanski. All rights reserved.</p>
+  </footer>
 </body>
-
 </html>
