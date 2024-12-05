@@ -6,9 +6,10 @@
 	--purple: #885CF6;
 	--lightyellow: #fbf7e4;
 	--yellow: #edc447;
-	--darkyellow: #E1BB4A;
-	--light2: #E9C0CE;
+	--darkyellow: #fdb714;
+	--light2: #faf865;
 	--olive: #423E37;
+	--neutral: hsl(262, 55%, 57%);
 }
 
 * {
@@ -19,9 +20,21 @@
 body {
 	display: flex;
 	flex-direction: column;
-	margin: 5% 20%;
+	margin: 10% 10%;
 	min-height: 100vh;
-	background-image: linear-gradient(to bottom, var(--light), var(--lightyellow));
+	background-image: linear-gradient(to bottom, var(--purple), var(--pink));
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	border-color: var(--pink);
+	border-style: outset;
+	border-width: 5px;
+	gap: 5%;
+	padding: 10% 10%;
+	background-color: var(--neutral);
 }
 
 .header {
@@ -35,12 +48,13 @@ body {
 	width: 100%;
 	margin: 2% 0%;
 
-	color: var(--yellow);
+	color: var(--darkyellow);
 }
 
 .header h3 {
 	margin: 2% 0%;
 	max-width: 800 px;
+	font-style: italic;
 
 	color: var(--yellow);
 }
