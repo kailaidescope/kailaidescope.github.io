@@ -4,6 +4,7 @@
 	--darker: #070807;
 	--pink: #EC4899;
 	--purple: #885CF6;
+	--lightyellow: #fbf7e4;
 	--yellow: #edc447;
 	--darkyellow: #E1BB4A;
 	--light2: #E9C0CE;
@@ -20,7 +21,7 @@ body {
 	flex-direction: column;
 	margin: 5% 20%;
 	min-height: 100vh;
-	background-image: linear-gradient(to top, var(--pink), var(--purple));
+	background-image: linear-gradient(to bottom, var(--light), var(--lightyellow));
 }
 
 .header {
