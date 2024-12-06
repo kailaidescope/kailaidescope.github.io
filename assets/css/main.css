@@ -69,8 +69,9 @@ body {
 
 .signature {
 	padding: 0% 30%;
-	width: 100%;
-	height: auto;
+	margin: 0% 0% 0% 0%;
+	width: auto;
+	height: 13vmax;
 }
 
 .header h1 {
