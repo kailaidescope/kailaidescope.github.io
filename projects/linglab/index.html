@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-
-    <link rel="stylesheet" href="./assets/css/main.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linglab Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="background"></div>
-    <div class="panel">
-        <div class="header">
-            <object class="signature" data="assets/images/KT.svg" type="image/svg+xml" width="200" height="200"></object>
-            <h1>Kai Turanski</h1>
-            <h3>About me:</h3>
-            <p>Hi! I’m @kailaidescope, otherwise known as Kai. I’m interested in computer science, software development, video game development, anthropology, and music. I’m currently learning to use fine-tuned LLM models. I’m always happy to collaborate on art or software projects. You can reach me at <a id="pink" href="kai@turanski.com">kai@turanski.com</a><p>
-        </div>
-        
-        <div class="divider"></div>
-
-        <div class="super-projects">
-            <h2>My Projects:</h2>
-            <div class="project-pane">
-                <div class="project">
-                    <h2>LingLab</h2>
-                    <p>A website designed to host constructed languages (conlangs). WIP.</p>
-                    <a href="./level-design/index.html">Take a look!</a>
-                </div>
-                <div class="project">
-                    <h2>Splendor Online</h2>
-                    <p>Peer2Peer edition of the card game Splendor.</p>
-                    <a href="./level-design/index.html">See it yourself!</a>
-                </div>
-                <div class="project">
-                    <h2>Level Design Portfolio</h2>
-                    <p>My custom maps for Valve games Team Fortress 2 and Counter-Strike 2.</p>
-                    <a href="./level-design/index.html">Check it out!</a>
-                </div>
-                <div class="project">
-                    <h2>Grid Cipher</h2>
-                    <p>Web-hosted cipher project inspired by COMP 273 at McGill University.</p>
-                    <p style="font-style: italic;">Content warning: intentionally bad graphic design.</p>
-                    <a href="./grid-cipher/index.html">Try it out!</a>
-                </div>
-            </div>
-        </div> 
-        <div class="divider"></div>
-        <div class="super-projects">
-            <h2>My Art:</h2>
-            <div class="project-pane">
-                <div class="project">
-                    <h2>Photography</h2>
-                    <p>My photography portfolio, featuring film photos taken around North America.</p>
-                    <a href="./art/index.html">Take a gander!</a>
-                </div>
-                <div class="project">
-                    <h2>Music</h2>
-                    <p>My music projects, produced primarily using Ableton Live.</p>
-                    <a href="./art/index.html">Give a listen!</a>
-                </div>
-                <div class="project">
-                    <h2>D&D World</h2>
-                    <p>My own Dungeons & Dragons homebrew world, made accessible through interactive maps and lore documents.</p>
-                    <a href="./aulka/index.html">Give it a whirl!</a>
-                </div>
-            </div>
-        </div>
-        <div class="divider"></div>
+  <header>
+    <div class="header-content">
+      <h1>Linglab</h1>
+      <p>A platform for sharing and discovering constructed languages.</p>
     </div>
-</body>
+  </header>
 
+  <main>
+    <section class="introduction">
+      <h2>About Linglab</h2>
+      <p>
+        Linglab is a platform designed for conlang creators to host their languages, share their work, 
+        and discuss with like-minded individuals. We’ve crafted a clean and appealing design to highlight 
+        the creativity and joy of conlanging while keeping the experience accessible for beginners and experts alike.
+      </p>
+    </section>
+
+    <section class="portfolio">
+      <h2>Behind the Scenes</h2>
+      <div class="gallery">
+        <div class="image-container">
+          <img src="assets/images/profile.png" alt="Linglab Website View 1">
+          <figcaption>The profile page</figcaption>
+        </div>
+        <div class="image-container">
+          <img src="assets/images/signup.png" alt="Linglab Website View 2">
+          <figcaption>Signing up</figcaption>
+        </div>
+        <div class="image-container">
+          <img src="assets/images/search.png" alt="Linglab Website View 3">
+          <figcaption>Searching for friends!</figcaption>
+        </div>
+        <div class="image-container">
+          <img src="assets/images/figma.png" alt="Figma Design of Linglab">
+          <figcaption>Our visual design document</figcaption>
+        </div>
+        <div class="image-container gif">
+            <img src="assets/images/menu-open.gif" alt="Linglab Website Demo">
+            <figcaption>A responsive menu</figcaption>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </main>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
