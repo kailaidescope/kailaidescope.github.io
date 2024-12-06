@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-
-    <link rel="stylesheet" href="./assets/css/main.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Splendor Online - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <div class="background"></div>
-    <div class="panel">
-        <div class="header">
-            <object class="signature" data="assets/images/KT.svg" type="image/svg+xml" width="200" height="200"></object>
-            <h1>Kai Turanski</h1>
-            <h3>About me:</h3>
-            <p>Hi! I’m @kailaidescope, otherwise known as Kai. I’m interested in computer science, software development, video game development, anthropology, and music. I’m currently learning to use fine-tuned LLM models. I’m always happy to collaborate on art or software projects. You can reach me at <a id="pink" href="kai@turanski.com">kai@turanski.com</a><p>
-        </div>
-        
-        <div class="divider"></div>
+  <header>
+    <h1>Splendor Online</h1>
+    <p>
+      Splendor is a 2-4 person card game that me and a team of five other students at McGill transformed into an online, peer-to-peer game. 
+      Built with Java, Maven, Git CI/CD, and Docker, I focused on developing the front-end and connecting it to the backend API. 
+      Check out the <a href="https://github.com/kailaidescope/Splendor-Online" target="_blank">GitHub repository</a>.
+    </p>
+  </header>
 
-        <div class="super-projects">
-            <h2>My Projects:</h2>
-            <div class="project-pane">
-                <div class="project">
-                    <h2>LingLab</h2>
-                    <p>A website designed to host constructed languages (conlangs). WIP.</p>
-                    <a href="./level-design/index.html">Take a look!</a>
-                </div>
-                <div class="project">
-                    <h2>Splendor Online</h2>
-                    <p>Peer2Peer edition of the card game Splendor.</p>
-                    <a href="./level-design/index.html">See it yourself!</a>
-                </div>
-                <div class="project">
-                    <h2>Level Design Portfolio</h2>
-                    <p>My custom maps for Valve games Team Fortress 2 and Counter-Strike 2.</p>
-                    <a href="./level-design/index.html">Check it out!</a>
-                </div>
-                <div class="project">
-                    <h2>Grid Cipher</h2>
-                    <p>Web-hosted cipher project inspired by COMP 273 at McGill University.</p>
-                    <p style="font-style: italic;">Content warning: intentionally bad graphic design.</p>
-                    <a href="./grid-cipher/index.html">Try it out!</a>
-                </div>
-            </div>
-        </div> 
-        <div class="divider"></div>
-        <div class="super-projects">
-            <h2>My Art:</h2>
-            <div class="project-pane">
-                <div class="project">
-                    <h2>Photography</h2>
-                    <p>My photography portfolio, featuring film photos taken around North America.</p>
-                    <a href="./art/index.html">Take a gander!</a>
-                </div>
-                <div class="project">
-                    <h2>Music</h2>
-                    <p>My music projects, produced primarily using Ableton Live.</p>
-                    <a href="./art/index.html">Give a listen!</a>
-                </div>
-                <div class="project">
-                    <h2>D&D World</h2>
-                    <p>My own Dungeons & Dragons homebrew world, made accessible through interactive maps and lore documents.</p>
-                    <a href="./aulka/index.html">Give it a whirl!</a>
-                </div>
-            </div>
-        </div>
-        <div class="divider"></div>
-    </div>
+  <main>
+    <!-- Login Process Section -->
+    <section class="gallery-section">
+      <h2>Login Process</h2>
+      <div class="gallery">
+        <div class="image-container"><img src="assets/images/login.PNG" alt="Login Screen 1"><figcaption>Step 1! Login</figcaption></div>
+        <div class="image-container"><img src="assets/images/logged_in.PNG" alt="Login Screen 2"><figcaption>Then, check your options</figcaption></div>
+        <div class="image-container"><img src="assets/images/expansions.PNG" alt="Login Screen 3"><figcaption>Select your epansions</figcaption></div>
+        <div class="image-container"><img src="assets/images/lobbies.PNG" alt="Login Screen 4"><figcaption>Get your friends to join the lobby</figcaption></div>
+        <div class="image-container"><img src="assets/images/in_lobby.PNG" alt="Login Screen 5"><figcaption>All set!</figcaption></div>
+      </div>
+    </section>
+
+    <!-- Gameplay Section -->
+    <section class="gallery-section">
+      <h2>Gameplay</h2>
+      <div class="gallery">
+        <div class="image-container"><img src="assets/images/begin_game.PNG" alt="Gameplay Screen 1"><figcaption>We're in the game now</figcaption></div>
+        <div class="image-container"><img src="assets/images/bank.PNG" alt="Gameplay Screen 2"><figcaption>You'll want resources from the bank</figcaption></div>
+        <div class="image-container"><img src="assets/images/card_actions.PNG" alt="Gameplay Screen 3"><figcaption>That way you can buy cards</figcaption></div>
+        <div class="image-container"><img src="assets/images/player_summary.png" alt="Gameplay Screen 4"><figcaption>Make sure your friends don't get ahead!</figcaption></div>
+        <div class="image-container"><img src="assets/images/payment_unfulfilled.PNG" alt="Gameplay Screen 5"><figcaption>Looks like you need to pay more for that card</figcaption></div>
+        <div class="image-container"><img src="assets/images/payment_over.PNG" alt="Gameplay Screen 6"><figcaption>Well, that's just too much</figcaption></div>
+        <div class="image-container"><img src="assets/images/payment_fulfilled.PNG" alt="Gameplay Screen 7"><figcaption>Perfect.</figcaption></div>
+        <div class="image-container"><img src="assets/images/trading_posts_acquired.png" alt="Gameplay Screen 8"><figcaption>You unlocked a trading post ability!</figcaption></div>
+        <div class="image-container"><img src="assets/images/reserve_noble.PNG" alt="Gameplay Screen 9"><figcaption>Now, you can reserve a noble</figcaption></div>
+        <div class="image-container"><img src="assets/images/reserve_noble_hand.PNG" alt="Gameplay Screen 10"><figcaption>There she is in your hand!</figcaption></div>
+        <div class="image-container"><img src="assets/images/satchel_attach.PNG" alt="Gameplay Screen 11"><figcaption>Plus, double a card's output with a satchel</figcaption></div>
+        <div class="image-container"><img src="assets/images/satchel_attached.PNG" alt="Gameplay Screen 12"><figcaption>All set! Looks like you know how to play!</figcaption></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
