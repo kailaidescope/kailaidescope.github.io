@@ -120,4 +120,48 @@ figcaption {
 	font-size: 0.9rem;
 }
 }
+
+/* Modal Styles */
+#image-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+#image-modal .modal-content {
+	max-width: 90%;
+	max-height: 90%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
+
+#image-modal img {
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+	width: auto; /* Preserve aspect ratio */
+	height: auto; /* Preserve aspect ratio */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove zoom effect in modal */
+.gallery img:hover {
+	transform: scale(1.05); /* Keep hover effect in the gallery */
+}
+
+#image-modal img:hover {
+	transform: none; /* Disable zoom effect for modal images */
+}
+
   
