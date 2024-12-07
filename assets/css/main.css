@@ -48,10 +48,9 @@ body {
 .panel {
 	display: flex;
 	flex-direction: column;
-	border-radius: 10px;
 	border-color: var(--darkyellow);
-	border-style: outset;
-	border-width: 0.5vmax;
+	border-style: solid;
+	border-width: 0 0.6vmax;
 	width: min(100%, 1000px);
 	gap: 5%;
 	padding: 7% 10%;
@@ -106,7 +105,7 @@ body {
 .divider {
 	margin: 5% 0%;
 	width: 100%;
-	height: 0.2vmax;
+	height: 0.5vmax;
 	background-color: var(--darkyellow);
 }
 
@@ -114,6 +113,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-image: linear-gradient(to top, var(--neutral), var(--purple), var(--neutral));
+	border-color: var(--darkyellow);
+	border-style: solid;
+	border-width: 0 0.2vmax;
+	padding: 0% 10%;
 }
 
 .super-projects h2 {
@@ -130,6 +134,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	margin: 2vmax 0vmax;
 	width: 100%;
 	gap: 4%;
 }
@@ -140,6 +145,7 @@ body {
 	max-width: 800 px;
 	font-size: var(--medium2);
 	text-shadow: var(--darker) 0px 0px 0.4px;
+
 
 	color: var(--purple);
 	/*text-shadow: 0.5px 1px 1px var(--olive);*/
@@ -162,10 +168,9 @@ body {
 	flex-direction: column;
 	flex: 1 1 calc(100% / 3 - 4%); /* Default: 3 columns */
 	margin: 1.5vmin 0px;
-	border-style: outset;
+	border-style: solid;
 	border-color: var(--pink);
-	border-radius: 3vw;
-	border-width: 2px;
+	border-width: 0 0.3vmax;
 	background-image: linear-gradient(to top, var(--darkyellow), var(--yellow));
 	padding: 5% 7%;
 }
