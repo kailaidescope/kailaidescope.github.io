@@ -129,7 +129,6 @@ figcaption {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.8);
-	background-size: cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -149,7 +148,7 @@ figcaption {
 #image-modal img {
 	display: block;
 	max-width: 90%;
-	max-height: 90%;
+	max-height: 100%;
 	width: auto; /* Preserve aspect ratio */
 	height: auto; /* Preserve aspect ratio */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -163,5 +162,3 @@ figcaption {
 #image-modal img:hover {
 	transform: none; /* Disable zoom effect for modal images */
 }
-
-  
