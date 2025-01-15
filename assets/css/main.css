@@ -103,6 +103,20 @@ body {
 	text-shadow: var(--dark) 0.2px 0.2px 0.1px;
 }
 
+.socials {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 2% 0% 0% 0%;
+	gap: 2%;
+}
+
+.socials .icon {
+	width: 6vmax;
+	height: auto;
+}
+
 .divider {
 	margin: 0% 0% 0% 0%;
 	width: 100%;
