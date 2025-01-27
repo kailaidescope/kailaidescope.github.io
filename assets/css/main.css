@@ -11,7 +11,7 @@
 	--olive: #423E37;
 	--neutral: #8349e9;
 
-	--large: min(4.5vmax,400%);
+	--large: min(4.2vmax,400%);
 	--medium: min(2.5vmax,220%);
 	--medium2: min(3vmax,220%);
 	--small: min(2vmax,135%);
@@ -71,7 +71,7 @@ body {
 	padding: 0% 30%;
 	margin: 0% 0% 0% 0%;
 	width: auto;
-	height: 13vmax;
+	height: 8vmax;
 }
 
 .header h1 {
@@ -103,13 +103,20 @@ body {
 	text-shadow: var(--dark) 0.2px 0.2px 0.1px;
 }
 
+.header .portrait {
+	width: 15vmax;
+	height: auto;
+	border-radius: 100%;
+	border: var(--yellow) 0.3vmax solid;
+}
+
 .socials {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	margin: 2% 0% 0% 0%;
-	gap: 2%;
+	gap: 5%;
 }
 
 .socials .icon {
