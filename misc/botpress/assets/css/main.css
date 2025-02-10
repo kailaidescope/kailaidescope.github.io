@@ -15,7 +15,7 @@
     --border-width: 1px;
 
     --page-header-height: 10%;
-    --sidebar-width: 15%;
+    --sidebar-width: 5%;
     --content-header-height: 10%;
     --content-text-width: 80%;
     
@@ -31,18 +31,23 @@
     font-family: var(--font-family);
     color: var(--light);
     margin: 0;
-    overflow: hidden;
     min-height: fit-content;
+    scroll-behavior: smooth;
+
+    color: #dddddd;
+    border: #f8ed4e2f 0.5px solid;
+    box-sizing: border-box;
+    background-color: #fbfb4b14;
+}
+
+html {
+    background-color: var(--background);
 }
 
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    height: 100vh;
-    max-height: 100vh;
-    background-color: var(--background);
 }
 
 .header {
@@ -64,8 +69,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    min-height: 90%;
-    max-height: 90%;
+    position: sticky;
+    align-self: flex-start;
+    top: 0px;
 }
 
 .sidebar {
@@ -74,7 +80,7 @@ body {
     width: var(--sidebar-width);
     min-width: fit-content;
     color: #fff;
-    padding: 5% 6%;
+    padding: 2% 4% 1% 2%;
     border-right: var(--secondary) var(--border-width) solid;
 
     .nav-button {
@@ -116,10 +122,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 2% 15% 2% 5%;
-    overflow-y: scroll;
+   /*  overflow-y: scroll; */
     scroll-behavior: smooth;
-    min-height: 100%;
-    max-height: 100%;
     width: calc(100% - var(--sidebar-width));
 
     .content-header {
@@ -140,13 +144,9 @@ body {
     .content-body {
         display: flex;
         flex-direction: row;
-        overflow: unset;
-        scroll-behavior: unset;
 
         .content-navigation {
             display: block;
-            position: sticky ;
-            top: 10px;
             width: calc(100% - var(--content-text-width));
         }
 
