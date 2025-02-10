@@ -31,13 +31,10 @@
     font-family: var(--font-family);
     color: var(--light);
     margin: 0;
-    min-height: fit-content;
-    scroll-behavior: smooth;
-
-    color: #dddddd;
-    border: #f8ed4e2f 0.5px solid;
-    box-sizing: border-box;
-    background-color: #fbfb4b14;
+    
+    /* For debugging */
+    /* border: #f8ed4e2f 0.5px solid;
+    background-color: #fbfb4b14; */
 }
 
 html {
@@ -54,24 +51,18 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: var(--background);
     height: var(--page-header-height);
-    padding: 0% 7%;
-    gap: 10%;
-    border-bottom: var(--secondary) var(--border-width) solid;
+    padding: 1% 4%;
+    border-bottom: var(--light) calc(var(--border-width) * 3) solid;
     
     .logo {
-        height: 50%;
+        width: 7rem;
     }
 }
 
 .guides {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    position: sticky;
-    align-self: flex-start;
-    top: 0px;
 }
 
 .sidebar {
@@ -81,7 +72,9 @@ body {
     min-width: fit-content;
     color: #fff;
     padding: 2% 4% 1% 2%;
-    border-right: var(--secondary) var(--border-width) solid;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
 
     .nav-button {
         border: var(--light)  var(--border-width) none;
@@ -93,38 +86,43 @@ body {
     .nav-button:hover {
         background-color: var(--secondary);
     }
+
+    h2 {
+        font-size: calc(var(--font-size-medium-small) - 3px);
+        font-weight: 400;
+        color: var(--light-tint);
+        margin-bottom: 1rem;
+        padding: 0 10px;
+        text-transform: uppercase;
+    }
+    ul {
+        list-style-type: none;
+        gap: 0px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+        li {
+            margin: 10px 0;
+            width: 100%;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: var(--font-size-medium-small)
+            }
+        }
+    }
 }
-.sidebar h2 {
-    font-size: calc(var(--font-size-medium-small) - 3px);
-    font-weight: 400;
-    color: var(--light-tint);
-    margin-bottom: 1rem;
-    padding: 0 10px;
-    text-transform: uppercase;
-}
-.sidebar ul {
-    list-style-type: none;
-    gap: 0px;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-.sidebar ul li {
-    margin: 10px 0;
-    width: 100%;
-}
-.sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: var(--font-size-medium-small)
-}
+
 .content {
     display: flex;
     flex-direction: column;
-    padding: 2% 15% 2% 5%;
+    padding: 2% 1% 2% 5%;
    /*  overflow-y: scroll; */
     scroll-behavior: smooth;
     width: calc(100% - var(--sidebar-width));
+    border-left: var(--secondary) var(--border-width) solid;
 
     .content-header {
         display: flex;
@@ -144,10 +142,53 @@ body {
     .content-body {
         display: flex;
         flex-direction: row;
+        gap: 10%;
 
+        
         .content-navigation {
-            display: block;
+            display: none;
+            @media all and (min-width: 1000px) {
+                display: flex;
+            }
+
+            flex-direction: column;
+
+            position: sticky;
+            top: 0;
+            align-self: flex-start;
+
+            padding: 5% 0;
+            margin-right: 10%;
+            min-width: fit-content;
             width: calc(100% - var(--content-text-width));
+
+            
+            ul {
+                list-style-type: none;
+                gap: 0px;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+
+                h3 {
+                    font-size: calc(var(--font-size-medium-small) - 3px);
+                    font-weight: 400;
+                    color: var(--light-tint);
+                    margin-bottom: 1rem;
+                }
+        
+                li {
+                    margin: 10px 0;
+                    width: 100%;
+        
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-weight: 200;
+                        font-size: var(--font-size-small)
+                    }
+                }
+            }
         }
 
         .content-text {
