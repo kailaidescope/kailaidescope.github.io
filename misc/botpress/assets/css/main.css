@@ -47,6 +47,12 @@ body {
     flex-direction: column;
 }
 
+#super-everything {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -71,7 +77,7 @@ body {
     width: var(--sidebar-width);
     min-width: fit-content;
     color: #fff;
-    padding: 2% 4% 1% 2%;
+    padding: 2% 2% 1% 2%;
     position: sticky;
     top: 0;
     align-self: flex-start;
@@ -88,10 +94,11 @@ body {
     }
 
     h2 {
-        font-size: calc(var(--font-size-medium-small) - 3px);
+        font-size: calc(var(--font-size-small) - 3px);
         font-weight: 400;
         color: var(--light-tint);
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: 2rem;
         padding: 0 10px;
         text-transform: uppercase;
     }
@@ -108,7 +115,11 @@ body {
 
             color: #fff;
             text-decoration: none;
-            font-size: var(--font-size-medium-small)
+            font-size: var(--font-size-small);
+            
+            a {
+                text-decoration: none;
+            }
         }
     }
 }
