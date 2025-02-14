@@ -77,7 +77,7 @@ function setFooterContent() {
         if (link.textContent != articleTitle.id) {
             return;
         }
-        console.log(link.textContent);
+        //console.log(link.textContent);
 
         // Set previous article
         if (index > 0) {
@@ -180,4 +180,22 @@ function generateTableOfContents() {
         listItem.appendChild(sublist);
         tocList.appendChild(listItem);
     });
+}
+
+// You'll never guess what this function does
+function toggleShowGrommit() {
+    const grommit = document.querySelector('#grommit');
+    if (grommit == null) {
+        console.log('Grommit not found');
+        return;
+    }
+
+    if (grommit.style.display == 'block') {
+        grommit.style.display = 'none';
+        console.log("Grommit is hidden");
+        return;
+    } else {
+        grommit.style.display = 'block';
+        console.log("Grommit is shown");
+    }    
 }
