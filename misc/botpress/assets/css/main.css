@@ -234,6 +234,51 @@ body {
         .content-text {
             width: var(--content-text-width);
 
+            .footer-buttons {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 1fr;
+                grid-gap: 10rem;
+                width: 100%;
+
+                .button-wrapper
+                {
+                    display: flex;
+                    width: fit-content;
+
+                    button {
+                        background-color: var(--secondary);
+                        border: var(--secondary-tint) var(--border-width) solid;
+                        color: var(--light);
+                        border-radius: 5px;
+                        padding: 0.5rem 1rem;
+                        font-size: var(--font-size-small);
+                        font-weight: var(--font-weight-small);
+                        cursor: pointer;
+                        min-width: fit-content;
+                        
+                        a {
+                            text-decoration: none;
+                            min-width: fit-content;
+                        }
+    
+                        #previous-button {
+                            padding-right: 0.3rem;
+                            &::before {
+                                content: "< ";
+                            }
+                        }
+        
+                        #next-button {
+                            padding-left: 0.3rem;
+                            &::after {  
+                                content: " >";
+                            }
+                        }
+                    }      
+                }      
+            }
+
             .content-section {
                 display: flex;
                 flex-direction: column;

@@ -36,10 +36,93 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then(response => response.text())
                 .then(navBarText => {
                     articleSuperContainer.insertAdjacentHTML('afterbegin', navBarText);
+
+                    // Set footer content
+                    const footerContainer = document.querySelector('.content-text');
+                    if (footerContainer == null) {
+                        console.log('Footer container not found');
+                        return;
+                    }
+                    fetch('../../assets/html/footer_buttons.html')
+                        .then(response => response.text())
+                        .then(footerText => {
+                            footerContainer.insertAdjacentHTML('beforeend', footerText);
+                            
+                            setFooterContent();
+                        });
                 });
         });
-
 });
+
+function setFooterContent() {
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar == null) {
+        console.log('Sidebar not found for footer content');
+        return;
+    }
+    const articleTitleContainer = document.querySelector('.content-header');
+    if (articleTitleContainer == null) {
+        console.log('Article title container not found for footer content');
+        return;
+    }
+    const articleTitle = articleTitleContainer.querySelector('h1');
+    if (articleTitle == null) {
+        console.log('Article title not found for footer content');
+        return;
+    }
+    //console.log(articleTitle.textContent);
+    
+    const links = sidebar.querySelectorAll('a');
+    links.forEach((link, index) => {
+        if (link.textContent != articleTitle.id) {
+            return;
+        }
+        console.log(link.textContent);
+
+        // Set previous article
+        if (index > 0) {
+            const previousLink = links[index - 1];
+            const previousArticleTitle = previousLink.textContent;
+            const previousArticleUrl = previousLink.href;
+            const previousArticleButton = document.querySelector('#previous-button');
+            if (previousArticleButton == null) {
+                console.log('Previous article button not found');
+                return;
+            }
+            previousArticleButton.href = previousArticleUrl;
+            previousArticleButton.textContent = previousArticleTitle;
+        } else {
+            const previousArticleButton = document.querySelector('#previous-button');
+            if (previousArticleButton == null) {
+                console.log('Previous article button not found');
+                return;
+            }
+            previousArticleButton.parentElement.style.display = 'none';
+        }
+
+        // Set next article
+        if (index < links.length - 1) {
+            const nextLink = links[index + 1];
+            const nextArticleTitle = nextLink.textContent;
+            const nextArticleUrl = nextLink.href;
+            const nextArticleButton = document.querySelector('#next-button');
+            if (nextArticleButton == null) {
+                console.log('Next article button not found');
+                return;
+            }
+            nextArticleButton.parentElement.parentElement.style.justifySelf = 'end';
+            nextArticleButton.href = nextArticleUrl;
+            nextArticleButton.textContent = nextArticleTitle;
+        } else {
+            const nextArticleButton = document.querySelector('#next-button');
+            if (nextArticleButton == null) {
+                console.log('Next article button not found');
+                return;
+            }
+            nextArticleButton.parentElement.style.display = 'none';
+        }
+    });
+}
 
 function setArticleContent(articleContent) {
     //console.log(document.body.innerHTML);
