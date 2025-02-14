@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Get save and remove inner html of body
     const articleContent = document.body.innerHTML;
-    //console.log(articleContent);
     superEverything.innerHTML = '';
 
     
