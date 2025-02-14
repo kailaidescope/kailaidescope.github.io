@@ -20,7 +20,7 @@
     --content-text-width: 80%;
     
     --font-size-large: 3rem;
-    --font-size-medium: 1.5rem;
+    --font-size-medium: 2rem;
     --font-size-medium-small: 1.2rem;
     --font-size-small: 1rem;
 
@@ -225,18 +225,21 @@ body {
                         font-weight: var(--font-weight-medium);
                         color: var(--light);
                         margin-bottom: 3%;
-                        margin-top: 7%;
+                        margin-top: 15%;
                     }
                 }
             
                 .section-body {
-                    h3 {
-                        font-size: var(--font-size-medium-small);
-                        font-weight: var(--font-weight-medium-small);
-                        color: var(--light-tint);
-                        margin-top: 4%;
-                        margin-bottom: 2%;
+                    .section-subsection {
+                        h3 {
+                            font-size: var(--font-size-medium-small);
+                            font-weight: var(--font-weight-medium-small);
+                            color: var(--light-tint);
+                            margin-top: 10%;
+                            margin-bottom: 2%;
+                        }
                     }
+                    
 
                     p {
                         color: var(--light);

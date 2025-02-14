@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botpress Documentation Style</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+    <div id="super-everything">
+        <div class="content-header">
+            <h1>Modify a workflow</h1>
+        </div>
+        <div class="content-body">
+            <div class="content-text">
+                <div class="content-section">
+                    <div class="section-body">
+                        <p><b>Note:</b> Since a basic workflow setup is provided upon initialization, modifying the <b>Main</b> workflow is the easiest way to quickstart your bot.</p>
+                    </div>
+                    <div class="section-header">
+                        <h1>Instructions</h1>
+                    </div>
+                    <div class="section-body">
+                        <p>Once in the workflows tab, select the <b>Main</b> workflow to configure the core conversational flow of your bot.</p>
+                        <p>To allow your bot to generate a picture on command, find the <b>AutonomousNode</b> in the <b>Main</b> workflow and click the <b>Add Card</b> button within the <b>AutonomousNode</b>.</p>
+                        <p>A list of cards will pop up, from which you can search "Generate Image."</p>
+                        <p>Click on the card labeled <b>Generate Image</b>. It will automatically be added to your <b>AutonomousNode</b>.</p>
+                        <p>To give special instructions for image generation, click on the <b>Generate Image</b> card in the <b>AutonomousNode</b> and write in the <b>Instructions</b> field.</p>
+                        <p>With the card added, your <b>AutonomousNode</b> can choose to generate an image when prompted. Since this node is in the <b>Main</b> workflow, your bot will automatically use it during conversation.</p>
+
+                        <div class="section-subsection">
+                            <h3>Test the bot</h3>
+                            <p>To test the bot's new capabilities, open the <b>Emulator</b> chat on the right side of the screen. It may already be open.</p>
+                            <p>Write a prompt like: "Hi! Can you generate an image of a cat for me?" The bot will take a moment to process, then will send back a generated image.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <div class="section-header">
+                        <h1>Troubleshooting</h1>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-subsection">
+                            <h3>Where can I find the Main workflow?</h3>
+                            <p>If you aren't in the workflows tab, navigate to the top left sidebar of the studio, then click on the top button to access the workflows tab.</p>
+                            <p>If you are already on the workflows tab, you may have to expand the list of workflows by clicking the <b>Show Explorer</b> button on the right of the workflows tab button.</p>
+                            <p>Once the workflow list appears, the <b>Main</b> workflow will be at the top of the list, marked by a green flag.</p>
+                        </div>
+
+                        <div class="section-subsection">
+                            <h3>Where can I find the AutonomousNode?</h3>
+                            <p>To access the auto-generated <b>AutonomousNode</b> in the <b>Main</b> workflow:</p>
+                            <ol>
+                                <li>Navigate to the workflows tab</li>
+                                <li>Click on the <b>Main</b> workflow</li>
+                                <li>The <b>AutonomousNode</b> will be connected to the <b>Start</b> and <b>End</b> nodes</li>
+                                <li>You can change it by clicking on its cards or its <b>Instructions</b> box</li>
+                            </ol>
+
+                            <p>To create a new <b>AutonomousNode</b>:</p>
+                            <ol>
+                                <li>Navigate to the workflow in which you want to add the node</li>
+                                <li>Secondary click on the dotted background of the work area</li>
+                                <li>Select <b>AutonomousNode</b></li>
+                            </ol>
+                        </div>
+
+                        <div class="section-subsection">
+                            <h3>How can I connect nodes?</h3>
+                            <p>You can connect nodes by using their connection points—the little grey dots at the top left and bottom right of a node.</p>
+                            <p>Connection points on the left side are entry points and connection points on the right side are exit points. Node A is activated when another node B finishes working, if B's exit point is connected to A's entry point.</p>
+                            <p>Click and drag from one node's connection point to another node's connection point to create a link between the nodes.</p>
+                        </div>
+                        
+                        <div class="section-subsection">
+                            <h3>How can I delete a node?</h3>
+                            <p>Locate the node you want to delete and secondary click on it, then select <b>Delete Node</b>.</p>
+                        </div>
+
+                        <div class="section-subsection">
+                            <h3>How can I delete a card?</h3>
+                            <p>Locate the card you want to delete and secondary click on it, then select <b>Delete Card</b>.</p>
+                        </div>
+
+                        <div class="section-subsection">
+                            <h3>Why do I get an error when generating an image?</h3>
+                            <p>If you are seeing an error message in the emulator:</p>
+                            <ul>
+                                <li>These error messages are not always fatal, sometimes the bot needs to try a request twice</li>
+                                <li>These error messages won't be displayed to the user in the published version, but the bot may tell the user if an error was encountered</li>
+                                <li>If the error is fatal, check your bot's logic</li>
+                                <li>If nothing seems wrong, try refreshing the studio page</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="section-subsection">
+                            <h3>Why can't my bot generate an image?</h3>
+                            <p>There are several reasons why your bot might not generate an image:</p>
+                            <ul>
+                                <li>If you put a <b>Generate Image</b> card into an <b>AutonomousNode</b>, the bot decides when to generate an image. Try explicitly prompting your bot to generate an image, or add instructions to the bot or its <b>Generate Image</b> card to tell it when to generate images</li>
+                                <li>If prompting isn't the problem, check if you have exceeded your price plan limit. If you have, consider upgrading to a higher price limit</li>
+                                <li>If you haven't put a <b>Generate Image</b> card into your <b>AutonomousNode</b>, try adding one, republishing your bot, and prompting it for an image again</li>
+                                <li>If it still doesn't work, try creating a <b>StandardNode</b> and putting a <b>Generate Image</b> card inside it. Make sure you fill in the required prompt and ID fields. If this doesn't work, contact Botpress' support on their Discord.</li>
+                            </ul>
+                        </div>
+
+                        <div class="section-subsection">
+                            <h3>Further issues</h3>
+                            <p>If you are still experiencing issues, talk with our automated troubleshooting representative via the chat icon in the bottom right corner, or contact Botpress' team through their <a href="https://discord.com/invite/botpress">Discord</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-navigation">
+                <ul>
+                    <h3>Table of Contents</h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/main.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/02/11/18/20250211183751-W08ASNNT.js"></script>
+</body>
+</html>
