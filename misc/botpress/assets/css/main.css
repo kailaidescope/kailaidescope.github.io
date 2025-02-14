@@ -15,7 +15,7 @@
     --border-width: 1px;
 
     --page-header-height: 10%;
-    --sidebar-width: 5%;
+    --sidebar-width: 17%;
     --content-header-height: 10%;
     --content-text-width: 80%;
     
@@ -25,7 +25,7 @@
     --font-size-small: 1rem;
 
     --font-weight-large: 600;
-    --font-weight-medium: 700;
+    --font-weight-medium: 600;
     --font-weight-medium-small: 500;
     --font-weight-small: 400;
     --font-family: Twemoji Country Flags, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -132,6 +132,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 2% 1% 15% 5%;
    /*  overflow-y: scroll; */
     scroll-behavior: smooth;
@@ -144,6 +145,8 @@ body {
         flex-direction: column;
         border-bottom: var(--secondary) var(--border-width) solid;
         margin-bottom: 30px;
+        width: 100%;
+        max-width: 1100px;
         height: var(--content-header-height);
 
         h1 {
@@ -157,6 +160,7 @@ body {
     .content-body {
         display: flex;
         flex-direction: row;
+        max-width: 1100px;
         gap: 10%;
 
         
@@ -174,7 +178,7 @@ body {
 
             padding: 5% 0;
             margin-right: 10%;
-            min-width: fit-content;
+            min-width: 250px;
             width: calc(100% - var(--content-text-width));
 
             
@@ -204,6 +208,26 @@ body {
                         font-size: var(--font-size-small)
                     }
                 }
+
+                ul {
+                    list-style-type: none;
+                    gap: 0px;
+                    padding-left: 1.5rem;
+                    margin: 0;
+                    width: 100%;
+
+                    li {
+                        margin: 10px 0;
+                        width: 100%;
+            
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                            font-weight: 200;
+                            font-size: var(--font-size-small)
+                        }
+                    }
+                }
             }
         }
 
@@ -213,30 +237,31 @@ body {
             .content-section {
                 display: flex;
                 flex-direction: column;
+                margin-bottom: 11%;
         
                 .section-header {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     min-height: fit-content;
+                    margin-bottom: 5%;
         
                     h1 {
                         font-size: var(--font-size-medium);
                         font-weight: var(--font-weight-medium);
                         color: var(--light);
-                        margin-bottom: 3%;
-                        margin-top: 15%;
                     }
                 }
             
                 .section-body {
                     .section-subsection {
+                        margin-bottom: 10%;
+
                         h3 {
                             font-size: var(--font-size-medium-small);
                             font-weight: var(--font-weight-medium-small);
                             color: var(--light-tint);
-                            margin-top: 10%;
-                            margin-bottom: 2%;
+                            margin-bottom: 4%;
                         }
                     }
                     
@@ -245,7 +270,7 @@ body {
                         color: var(--light);
                         font-size: var(--font-size-small);
                         font-weight: var(--font-weight-small);
-                        margin-bottom: 2%;
+                        margin-bottom: 1rem;
                     }
 
                     ul {

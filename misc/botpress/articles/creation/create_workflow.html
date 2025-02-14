@@ -18,16 +18,27 @@
                         <h1>Instructions</h1>
                     </div>
                     <div class="section-body">
-                        <p>If you have created a bot and want to access its editor studio, first follow the steps to access the <a href="https://app.botpress.cloud/workspaces">dashboard</a>.</p>
-                        <p>Then, find the bot's name on the home screen of the dashboard, hover over it, and click <b>Edit in Studio</b>.</p>
-                        <p>You will be redirected to the studio, where you can modify, test, and publish your bot.</p>
-                        <p>The studio takes around 10 seconds to load, as it collects all your bot's data.</p>
-                        <p>Once you are in the studio, you can use it to customize the behaviour of the bot using the emulator, your workflows, and your knowledge bases.</p>
-
                         <div class="section-subsection">
-                            <h3>Bot Setup</h3>
-                            <p>If your bot has not been set up yet, you will be prompted to choose a template for it and go through setup steps.</p>
-                            <p>If you need help setting up the bot but have left the setup screen, click the <b>Assistant</b> button at the top center of the screen to get help.</p>
+                            <h3>Setup a new workflow</h3>
+                            <p>Once in the workflows tab, select <b>Create Workflow</b>, and give it a descriptive name.</p>
+                            <p>Delete the <b>Standard</b> node connected to the <b>Entry</b> and <b>Exit</b> nodes. Then replace it with an <b>AutonomousNode</b> by secondary clicking the dotted background and clicking <b>AutonomousNode</b>.</p>
+                            <p>Attach the backgroundAutonomousNodes' entry connection point to the <b>Entry</b> node and the <b>AutonomousNodes</b>' exit connection point to the <b>Exit</b> node.</p>
+                        </div>
+                        <div class="section-subsection">
+                            <h3>Setup image generation in your workflow</h3>
+                            <p>Allow your bot to generate a picture on command by finding the <b>AutonomousNode</b> in your new workflow and clicking <b>Add Card</b>.</p>
+                            <p>A list of Cards will pop up, from which you can search "Generate Image."</p>
+                            <p>Click on the card labeled <b>Generate Image</b>. It will automatically be added to your <b>AutonomousNode</b>.</p>
+                            <p>To give special instructions for image generation, click on the <b>Generate Image</b> card in the <b>AutonomousNode</b> and write in the <b>Instructions</b> field.</p>
+                            <p>With the card added, your <b>AutonomousNode</b> can choose to generate an image when prompted. Since this node is not yet connected to the <b>Main</b> workflow, your bot can't use it during conversation yet.</p>
+                        </div>
+                        <div class="section-subsection">
+                            <h3>Make your bot generate images</h3>
+                            <p>Let the bot use your new workflow by connecting it to the <b>Main</b> workflow.</p>
+                            <p>Start by opening the <b>Main</b> workflow, secondary-clicking the dotted background, and selecting the <b>Execute a Workflow</b> node with your new workflow's name attached.</p>
+                            <p>Hook up the <b>Main</b> workflow's <b>Start</b> and <b>End</b> nodes to the <b>Execute a Workflow</b> node.</p>
+                            <p>Your bot is now ready to be tested! To test the bot's new functionality, open the <b>Emulator</b> chat on the right side of the screen. It may already be open.</p>
+                            <p>Write a prompt like: "Hi! Can you generate an image of a cat for me?" The bot will take a moment to process, then will send back a generated image.</p>
                         </div>
                     </div>
                 </div>
@@ -37,27 +48,21 @@
                     </div>
                     <div class="section-body">
                         <div class="section-subsection">
-                            <h3>Where can I find my bot?</h3>
-                            <p>Make sure you are in the home menu, which can be accessed through the <b>Home</b> button on the left sidebar.</p>
-                            <p>If the bot is not there, try looking in other workspaces, which you can access by clicking the top left corner of the dashboard.</p>
-                            <p>If you still can't find the bot, check the activity logs on the right sidebar to see if it was deleted.</p>
+                            <h3>How can I create a new workflow?</h3>
+                            <p>To create a new workflow, first navigate to the workflows tab on the top left sidebar of the studio.</p>
+                            <p>Above the list of existing workflows, click <b>Create Workflow</b>, and a new workflow will be initialized for you.</p>
                         </div>
 
                         <div class="section-subsection">
-                            <h3>Why can't I open the studio?</h3>
-                            <p>You may have another studio session open in the same Workspace. Since only one studio session is allowed per workspace, check if you have another session open, and close it.</p>
-                            <p>A studio session is another way to say an open window on the studio page.</p>
-                            <p>If you don't have another studio session open in the same Workspace, try the following steps:</p>
-
-                            <ol>
-                                <li>Close the studio, refresh your dashboard page, and reopen the studio</li>
-                                <li>Restart your browser and open the studio again</li>
-                                <li>Try making a new Workspace (in the top left of the dashboard), and making a new bot. If you can open this bot's studio, try waiting for 1 minute and re-opening the original bot's studio</li>
-                            </ol>
+                            <h3>How can I add a node?</h3>
+                            <p>To add a node to your bot, first navigate to the workflow you want to put it in. If you are unsure which workflow to edit, choose the <b>Main</b> workflow.</p>
+                            <p>When you see the workflow's nodes displayed, secondary click on the dotted background to bring up the node creation menu.</p>
+                            <p>Select any node you want, feel free to experiment with different kinds of nodes to see what they do.</p>
                         </div>
                         
                         <div class="section-subsection">
                             <h3>Further issues</h3>
+                            <p><b>Note:</b> Check if your error is mentioned in the <a href="./modify_workflow.html">Modify a workflow</a> section, if it is not mentioned here.</p>
                             <p>If you are still experiencing issues, talk with our automated troubleshooting representative via the chat icon in the bottom right corner, or contact Botpress' team through their <a href="https://discord.com/invite/botpress">Discord</a>.</p>
                         </div>
                     </div>

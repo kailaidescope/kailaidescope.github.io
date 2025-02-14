@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botpress Documentation Style</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+    <div id="super-everything">
+        <div class="content-header">
+            <h1>Embedding a bot on your website</h1>
+        </div>
+        <div class="content-body">
+            <div class="content-text">
+                <div class="content-section">
+                    <div class="section-header">
+                        <h1>Ways to embed</h1>
+                    </div>
+                    <div class="section-body" id="ways-to-embed">
+                        <p>There are many ways to embed your bot on a website—the simplest being embedding it directly into your website's HTML with a <code>&lt;script&gt;</code> tag. This guide will show you how to embed directly into your website's HTML.</p>
+                        <p>Tutorials for direct embedding and other frameworks are provided in the links below:</p>
+                        <ul>
+                            <li><a href="https://botpress.com/docs/webchat-v2">Embedded HTML</a></li>
+                            <li><a href="https://botpress.com/docs/react-js">React</a></li>
+                            <li><a href="https://botpress.com/docs/webflow">Webflow</a></li>
+                            <li><a href="https://botpress.com/docs/wix">Wix</a></li>
+                            <li><a href="https://botpress.com/docs/wordpress">Wordpress</a></li>
+                            <li><a href="https://botpress.com/docs/webchat-client">Webchat Client</a></li>
+                        </ul>
+                        <p>Once the bot is embedded in your website, a chat icon will appear in the bottom right corner. </p>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <div class="section-header">
+                        <h1>Instructions</h1>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-subsection">
+                            <h3>Introduction</h3>
+                            <p>This guide assumes that you are hosting your website from a raw HTML file, along with optional CSS and Javascript.</p>
+                            <p>Depending on how you are hosting your website the steps for embedding the webchat may vary. If this guide is not applicable, see the other guides in <a href="#ways-to-embed">Ways to embed</a>.</p>
+                        </div>
+                        <div class="section-subsection">
+                            <h3>Finding embedded scripts</h3>
+                            <p>To embed your chatbot into your website's raw HTML, all you have to do is copy two script tags into your HTML file.</p>
+                            <p>You can find these script tags by going to the <b>Dashboard</b> > select your bot from the left sidebar > <b>Webchat</b> > <b>Share</b>.</p>
+                        </div>
+                        <div class="section-subsection">
+                            <h3>Embedding scripts</h3>
+                            <p>Copy the style tags in the <b>Embed code</b> section and paste them into your raw HTML file just above the closing <code>&lt;/body&gt;</code> tag. For more information on the embedding process, you can follow this <a href="https://botpress.com/docs/webchat-v2">embedding guide</a>.</p>
+                            <p>Once the two <code>&lt;script&gt;</code> tags are added, you can save your HTML file and update your website hosting platform to use the updated HTML file.</p>
+                            <p>Then, the embedded scripts will inject the chatbot's UI into your page. The bot will be accessible via a chat button in the bottom right corner of your website. </p>
+                            <p>If you want to style your chat pane, check out <a href="#style-the-chat">how you can style the chat</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <div class="section-header">
+                        <h1>Troubleshooting</h1>
+                    </div>
+                    <div class="section-body">
+                        <div class="section-subsection">
+                            <h3>I've embedded the script, so why can't I access the chat?</h3>
+                            <p>The most common issues are resolved through these steps:</p>
+                            <ol>
+                                <li>Try reloading the page</li>
+                                <li>Ensure the edited HTML file is properly saved to the hosting service you are using and reload the page</li>
+                                <li>Ensuring the script tag is positioned in the right place, above the closing <code>&lt;/body&gt;</code> tag</li>
+                                <li>Ensure the copied code is correct</li>
+                                <li>Ensure the <code>&lt;script&gt;</code> tags are properly closed with a <code>&lt;/script&gt;</code> closing tag</li>
+                            </ol>
+                            <p>If the above solutions do not resolve the problem, there may be a problem with the script injection process.</p>
+                            <p>Ensure that the script tag is located in the main HTML file you are loading, rather than an HTML file injected into another at runtime (like a modular component). Since the Webchat script is called upon load, this should fix loading errors.</p>
+                            <p>If you are still having trouble, talk to our automated troubleshooting bot or contact Botpress' <a href="https://discord.com/invite/botpress">Discord</a> support.</p>
+                        </div>
+
+                        <div class="section-subsection" id="style-the-chat">
+                            <h3>How can I style the chat?</h3>
+                            <p>For control over your chat's styling, you can go to the <b>Dashboard</b> > select your bot from the left sidebar > <b>Webchat</b> > <b>Theme</b>.</p>
+                            <p>The <b>Styles</b> section allows you to write CSS that affects how your bot's chat panel is displayed. You can also choose the primary color of your chat pane under the <b>Theme</b> header.</p>
+                        </div>
+
+                        <div class="section-subsection">
+                            <h3>Why is the chat formatted strangely?</h3>
+                            <p>You may have made changes to the CSS styling of the chat pane. To revert to the original style, delete any CSS in the <b>Dashboard</b> > select your bot from the left sidebar > <b>Webchat</b> > <b>Theme</b> menu.</p>
+                            <p>If this is not the error, it is possible, but unlikely, that specific styling on your website could impact the chat's format. Try inspecting your website's CSS to find any bugs in the styling.</p>
+                        </div>
+                        
+                        <div class="section-subsection">
+                            <h3>Further issues</h3>
+                            <p>If you are still experiencing issues, talk with our automated troubleshooting representative via the chat icon in the bottom right corner, or contact Botpress' team through their <a href="https://discord.com/invite/botpress">Discord</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-navigation">
+                <ul>
+                    <h3>Table of Contents</h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/main.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2025/02/11/18/20250211183751-W08ASNNT.js"></script>
+</body>
+</html>

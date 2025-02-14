@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
     // Get save and remove inner html of body
-    const articleContent = document.body.innerHTML;
+    const articleContent = superEverything.innerHTML;
     superEverything.innerHTML = '';
 
     
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch('../../assets/html/header.html')
         .then(response => response.text())
         .then(headerText => {
-            console.log(headerText);
+            //console.log(headerText);
             superEverything.innerHTML = headerText;
-            console.log(superEverything.innerHTML);
+            //console.log(superEverything.innerHTML);
 
             // Set article content
             setArticleContent(articleContent)
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function setArticleContent(articleContent) {
-    console.log(document.body.innerHTML);
+    //console.log(document.body.innerHTML);
     const contentContainer = document.querySelector('.content');
     if (contentContainer == null) {
         console.log('Content container not found');
@@ -73,8 +73,28 @@ function generateTableOfContents() {
         link.href = `#${id}`;
         link.textContent = header.textContent;
 
+        const subHeaders = header.parentElement.parentElement.querySelectorAll("h3");
+        //console.log(subHeaders);
+        const sublist = document.createElement("ul");
+        subHeaders.forEach((subHeader, index) => {
+            // Create an ID for the header if it doesn't have one
+            let subId = subHeader.textContent.trim().toLowerCase().replace(/\s+/g, "-");
+            subHeader.id = subId;
+
+            // Create a new list item with a link
+            const subListItem = document.createElement("li");
+            const subLink = document.createElement("a");
+            subLink.href = `#${subId}`;
+            subLink.textContent = subHeader.textContent;
+
+            // Append link to list item and list item to ToC
+            subListItem.appendChild(subLink);
+            sublist.appendChild(subListItem);
+            });
+
         // Append link to list item and list item to ToC
         listItem.appendChild(link);
+        listItem.appendChild(sublist);
         tocList.appendChild(listItem);
     });
 }
