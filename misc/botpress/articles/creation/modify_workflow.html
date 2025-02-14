@@ -25,15 +25,28 @@
                             <h3>Modify Main workflow</h3>
                             <p>Once in the workflows tab, select the <b>Main</b> workflow to configure the core conversational flow of your bot.</p>
                             <p>To allow your bot to generate a picture on command, find the <b>AutonomousNode</b> in the <b>Main</b> workflow and click the <b>Add Card</b> button within the <b>AutonomousNode</b>.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/add_card.PNG" alt="Add card menu" width="60%">
+                            </div>
                             <p>A list of cards will pop up, from which you can search "Generate Image."</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/generate_image_search.PNG" alt="Generate image card" width="50%">
+                            </div>
                             <p>Click on the card labeled <b>Generate Image</b>. It will automatically be added to your <b>AutonomousNode</b>.</p>
                             <p>To give special instructions for image generation, click on the <b>Generate Image</b> card in the <b>AutonomousNode</b> and write in the <b>Instructions</b> field.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/generate_image_instructions.PNG" alt="Instructions screen for generating an image" width="90%">
+                            </div>
                             <p>With the card added, your <b>AutonomousNode</b> can choose to generate an image when prompted. Since this node is in the <b>Main</b> workflow, your bot will automatically use it during conversation.</p>
                         </div>
 
                         <div class="section-subsection">
                             <h3>Test the bot</h3>
                             <p>To test the bot's new capabilities, open the <b>Emulator</b> chat on the right side of the screen. It may already be open.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/empty_emulator.PNG" alt="Emulator screen" width="40%">
+                                <img src="../../assets/images/generated_image_in_emulator.PNG" alt="Emulator with generated image" width="40%">
+                            </div>
                             <p>Write a prompt like: "Hi! Can you generate an image of a cat for me?" The bot will take a moment to process, then will send back a generated image.</p>
                         </div>
                     </div>
@@ -47,12 +60,20 @@
                             <h3>Where can I find the Main workflow?</h3>
                             <p>If you aren't in the workflows tab, navigate to the top left sidebar of the studio, then click on the top button to access the workflows tab.</p>
                             <p>If you are already on the workflows tab, you may have to expand the list of workflows by clicking the <b>Show Explorer</b> button on the right of the workflows tab button.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/workflows_list.PNG" alt="List of workflows" width="50%">
+                            </div>
                             <p>Once the workflow list appears, the <b>Main</b> workflow will be at the top of the list, marked by a green flag.</p>
                         </div>
 
                         <div class="section-subsection">
                             <h3>Where can I find the AutonomousNode?</h3>
                             <p>To access the auto-generated <b>AutonomousNode</b> in the <b>Main</b> workflow:</p>
+
+                            <div class="image-container">
+                                <img src="../../assets/images/workflows_screen.PNG" alt="Workflows screen" width="90%">
+                            </div>
+
                             <ol>
                                 <li>Navigate to the workflows tab</li>
                                 <li>Click on the <b>Main</b> workflow</li>
@@ -66,11 +87,17 @@
                                 <li>Secondary click on the dotted background of the work area</li>
                                 <li>Select <b>AutonomousNode</b></li>
                             </ol>
+                            <div class="image-container">
+                                <img src="../../assets/images/autonomous_note_create.PNG" alt="AutonomousNode creation" width="30%">
+                            </div>
                         </div>
 
                         <div class="section-subsection">
                             <h3>How can I connect nodes?</h3>
                             <p>You can connect nodes by using their connection points—the little grey dots at the top left and bottom right of a node.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/connecting_nodes.png" alt="Connecting nodes" width="60%">
+                            </div>
                             <p>Connection points on the left side are entry points and connection points on the right side are exit points. Node A is activated when another node B finishes working, if B's exit point is connected to A's entry point.</p>
                             <p>Click and drag from one node's connection point to another node's connection point to create a link between the nodes.</p>
                         </div>

@@ -110,7 +110,7 @@ function setFooterContent() {
                 console.log('Next article button not found');
                 return;
             }
-            nextArticleButton.parentElement.parentElement.style.justifySelf = 'end';
+            nextArticleButton.parentElement.parentElement.style.justifySelf = 'end';    
             nextArticleButton.href = nextArticleUrl;
             nextArticleButton.textContent = nextArticleTitle;
         } else {

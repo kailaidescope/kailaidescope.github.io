@@ -27,16 +27,31 @@
                         <div class="section-subsection">
                             <h3>Setup image generation in your workflow</h3>
                             <p>Allow your bot to generate a picture on command by finding the <b>AutonomousNode</b> in your new workflow and clicking <b>Add Card</b>.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/add_card.PNG" alt="Add card menu" width="60%">
+                            </div>
                             <p>A list of Cards will pop up, from which you can search "Generate Image."</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/generate_image_search.PNG" alt="Generate image card" width="50%">
+                            </div>
                             <p>Click on the card labeled <b>Generate Image</b>. It will automatically be added to your <b>AutonomousNode</b>.</p>
                             <p>To give special instructions for image generation, click on the <b>Generate Image</b> card in the <b>AutonomousNode</b> and write in the <b>Instructions</b> field.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/generate_image_instructions.PNG" alt="Instructions screen for generating an image" width="90%">
+                            </div>
                             <p>With the card added, your <b>AutonomousNode</b> can choose to generate an image when prompted. Since this node is not yet connected to the <b>Main</b> workflow, your bot can't use it during conversation yet.</p>
                         </div>
                         <div class="section-subsection">
                             <h3>Make your bot generate images</h3>
                             <p>Let the bot use your new workflow by connecting it to the <b>Main</b> workflow.</p>
                             <p>Start by opening the <b>Main</b> workflow, secondary-clicking the dotted background, and selecting the <b>Execute a Workflow</b> node with your new workflow's name attached.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/execute_workflow_node.png" alt="" width="70%">
+                            </div>
                             <p>Hook up the <b>Main</b> workflow's <b>Start</b> and <b>End</b> nodes to the <b>Execute a Workflow</b> node.</p>
+                            <div class="image-container">
+                                <img src="../../assets/images/inserted_workflow_execution.PNG" alt="" width="90%">
+                            </div>
                             <p>Your bot is now ready to be tested! To test the bot's new functionality, open the <b>Emulator</b> chat on the right side of the screen. It may already be open.</p>
                             <p>Write a prompt like: "Hi! Can you generate an image of a cat for me?" The bot will take a moment to process, then will send back a generated image.</p>
                         </div>

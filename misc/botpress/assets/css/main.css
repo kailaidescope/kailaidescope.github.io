@@ -283,6 +283,18 @@ body {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 11%;
+
+                .image-container {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 5%;
+                    gap: 5%;
+
+                    img {
+                        max-width: 100%;
+                        border-radius: 10px;
+                    }
+                }
         
                 .section-header {
                     display: flex;
@@ -290,6 +302,7 @@ body {
                     width: 100%;
                     min-height: fit-content;
                     margin-bottom: 5%;
+                    
         
                     h1 {
                         font-size: var(--font-size-medium);
@@ -303,7 +316,7 @@ body {
                         margin-bottom: 10%;
 
                         h3 {
-                            font-size: var(--font-size-medium-small);
+                            font-size: calc(var(--font-size-medium-small) + 2px);
                             font-weight: var(--font-weight-medium-small);
                             color: var(--light-tint);
                             margin-bottom: 4%;
