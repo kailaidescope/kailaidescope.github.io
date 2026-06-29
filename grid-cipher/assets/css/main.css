@@ -93,6 +93,7 @@ textarea {
 	field-sizing: content;
 	min-height: 3lh; /* Optional: Sets a minimum height of 3 lines */
 	max-height: 10lh;
+	resize: vertical;
 }
 
 input, textarea {
