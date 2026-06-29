@@ -24,6 +24,10 @@ h1,h3 {
 	text-align: center;
 }
 
+.cipher-output {
+
+}
+
 h2 {
 	color: var(--pink);
 	text-align: center;
@@ -85,7 +89,13 @@ label {
 	margin: auto
 }
 
-input {
+textarea {
+	field-sizing: content;
+	min-height: 3lh; /* Optional: Sets a minimum height of 3 lines */
+	max-height: 10lh;
+}
+
+input, textarea {
 	background: var(--purple);
 	color: var(--light);
 	text-decoration-color: var(--light);
